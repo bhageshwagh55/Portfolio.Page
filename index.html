@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhagesh Wagh | Portfolio</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #f2f2f2, #d9e4f5);
+      color: #333;
+    }
+
+    header {
+      background-color: #1e3c72;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      background: #163265;
+      padding: 12px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ffd700;
+      color: #163265;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      color: #1e3c72;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 250px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    footer {
+      background: #1e3c72;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      section {
+        padding: 30px 15px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      .skills, .projects {
+        flex-direction: column;
+      }
+
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bhagesh Wagh</h1>
+    <p>Aspiring Software Developer | AI & Web Dev Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>Hello! I’m Bhagesh, an enthusiastic developer passionate about AI, trading apps, and web development. Let’s build amazing things together!</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m currently pursuing engineering and building projects using HTML, CSS, JavaScript, and Firebase. I'm also learning Python for Algo Trading.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">HTML / CSS ></div>
+      <div class="card">JavaScript</div>
+      <div class="card">Firebase Auth</div>
+      <div class="card">Python (Learning)</div>
+      <div class="card">Trading / Stocks</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Trading App</h3>
+        <p>Built using C++ and Firebase with real-time data and login features.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>This beautiful responsive website showcasing all my skills and work.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <P>Email: bhageshwagh06@Gmail.com.com</p>
+    <p>GitHub: <a href="https://github.com/" target="_blank">github.com/bhagesh-wagh</a></p>
+    <p>Phone: 7218778365</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Bhagesh Wagh. All rights reserved.</p>
+  </footer>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('services.js').then(function (reg) {
+        console.log('Service Worker registered with scope:', reg.scope);
+      }).catch(function (err) {
+        console.log('Service Worker registration failed:', err);
+      });
+    });
+  }
+</script>
+
+
+</body>
+</html>
